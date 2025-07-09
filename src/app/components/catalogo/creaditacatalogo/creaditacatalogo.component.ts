@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {
@@ -17,6 +18,7 @@ import { CatalogomonedaService } from '../../../services/catalogomoneda.service'
 @Component({
   selector: 'app-creaditacatalogo',
   imports: [
+    CommonModule,
     MatInputModule,
     MatFormFieldModule,
     MatButtonModule,

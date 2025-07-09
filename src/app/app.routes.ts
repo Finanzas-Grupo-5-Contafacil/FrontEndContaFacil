@@ -27,19 +27,43 @@ export const routes: Routes = [
         path: 'nuevo',
         component: CreaditabonoComponent,
       },
-      { path: 'ediciones/:id', component: CreaditabonoComponent }
+      { 
+        path: 'ediciones/:id', 
+        component: CreaditabonoComponent,
+        data: { prerender: false }
+      }
     ],
   },
   { path: 'resultados', component: ResultadosComponent },
-  { path: 'resultados/:idBono', component: ResultadosComponent },
+  { 
+    path: 'resultados/:idBono', 
+    component: ResultadosComponent,
+    data: { prerender: false }
+  },
   { path: 'resultados-tabla', component: ListarComponent },
-  { path: 'resultados-tabla/:idBono', component: ListarComponent },
-  { path: 'listarbonodetalle/:idBono', component: ListarbonodetalleComponent },
+  { 
+    path: 'resultados-tabla/:idBono', 
+    component: ListarComponent,
+    data: { prerender: false }
+  },
+  { 
+    path: 'listarbonodetalle/:idBono', 
+    component: ListarbonodetalleComponent,
+    data: { prerender: false }
+  },
   { path: 'flujo-caja', component: FlujocajaComponent },
-  { path: 'flujocaja/:idBono', component: FlujocajaComponent },
+  { 
+    path: 'flujocaja/:idBono', 
+    component: FlujocajaComponent,
+    data: { prerender: false }
+  },
   { path: 'manual', component: ManualuserComponent },
   { path: 'catalogo-monedas', component: ListacatalogoComponent },
   { path: 'creaditacatalogo', component: CreaditacatalogoComponent },
-  { path: 'creaditacatalogo/:id', component: CreaditacatalogoComponent },
+  { 
+    path: 'creaditacatalogo/:id', 
+    component: CreaditacatalogoComponent,
+    data: { prerender: false }
+  },
   { path: 'faq', component: FyqComponent }
 ];
